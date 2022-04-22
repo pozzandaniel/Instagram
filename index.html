@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Font style logo instagram in header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+    <!-- ---------------------------------------------------------- -->
+    <!-- Font style of the rest of the site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- ---------------------------------------------------------------- -->
+    <script src="./templates.js"></script>
+    <script src="./script.js"></script>
+    <title>Intsagram</title>
+    <link rel="icon" type="image/x-icon" href="./img/icons/Instagram_logo_2016.svg">
+</head>
+
+<body onload="renderIcons(), show(), renderStories()">
+    <!-- <div w3-include-html="./templates/header.html"></div> -->
+    <div class="header">
+        <div class="logo">
+            <h1 class="logo-title">Intsagram</h1>
+        </div>
+        <div class="search-box">
+            <img class="magnifying-glass" src="./img/icons/magnifying-glass-solid.svg" alt="Lupe">
+            <input id="searchInput" onkeydown="filterContacts()" class="search-input" type="text" placeholder="Suchen">
+        </div>
+        <div id="headerBar" class="header-bar"></div>
+    </div>
+    <!-- Left side of the website -->
+    <div class="main-content">
+        <div id="storiesBar" class="stories-bar">
+            <!-- <div class="stories-box">
+                <div class="stories-icon"><img src="./img/stefan.jpg" alt=""></div>
+                <h5>Stefan C.</h5>
+            </div>
+            <div class="stories-box">
+                <div class="stories-icon"><img src="./img/canadian-railways.jpg" alt=""></div>
+                <h5>Canadian Railways</h5>
+            </div>    
+            <div class="stories-box">
+                <div class="stories-icon"><img src="./img/nelson.jpg" alt=""></div>
+                <h5>Nelson Smith</h5>
+            </div>
+            <div class="stories-box">
+                <div class="stories-icon"><img src="./img/stefanie.jpg" alt=""></div>
+                <h5>Stefanie Wallas</h5>
+            </div>
+            <div class="stories-box">
+                <div class="stories-icon"><img src="./img/christine.jpg" alt=""></div>
+                <h5>christine B.</h5>
+            </div> -->
+        </div>
+        <div id="postContainer"></div>
+    </div>
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+    <!-- Right side of the website -->
+    <div class="side-bar">
+        <!-- User profile -->
+        <div class="user-box">
+            <div class="user"><img src="./img/daniel.png" alt="">
+                <h4 class="name-user">Daniel Pozzan</h4>
+            </div>
+            <h4 onclick="openDialog()" class="text-blue">Wechseln</h4>
+        </div>
+        <!-- Contacts Suggestions -->
+        <div class="contacts">
+            <h4 class="contacts-title">Vorschläge für dich</h4>
+            <div class="contacts-box">
+                <div class="user"> <img src="./img/harley.jpg" alt="">
+                    <h4 class="name-user">Harley Davidson</h4></div>
+                <h4 onclick="openDialog()" class="text-blue">Folgen</h4>
+            </div>
+            <div class="contacts-box">
+                <div class="user"> <img src="./img/john.jpg" alt=""><h4 class="name-user">John J.</h4></div>
+                <h4 onclick="openDialog()" class="text-blue">Folgen</h4>
+            </div>
+            <!--  -->
+            <div class="contacts-box">
+                <div class="user"> <img src="./img/samantha.jpg" alt=""><h4 class="name-user">Samantha Jeff</h4></div>
+                <h4 onclick="openDialog()" class="text-blue">Folgen</h4>
+            </div>
+            <div class="contacts-box">
+                <div class="user"> <img src="./img/starbucks.jpg" alt=""><h4 class="name-user">Starbucks</h4></div>
+                <h4 onclick="openDialog()" class="text-blue">Folgen</h4>
+            </div>
+        </div>
+        <!-- Footer with Impressum, Datenschutz... -->
+        <div class="footer">
+            <a class="link-grey" href="./impressum.html"><p>Impressum</p></a>
+            <a class="link-grey" href="./datenschutz.html"><p>Datenschutz</p></a>
+            <p>&copy 2022 Intsagram</p>
+        </div>
+    </div>
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <div id="dialog" class="dialog d-none">
+        <div class="dialog-window">
+            <div class="dialog-title"><h2>Achtung!</h2></div>
+            <div class="dialog-paragraph"><p>Funktion noch nicht vorhanden :)</p></div>
+            <h2 onclick="closeDialog()" class="dialog-closer">X</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>

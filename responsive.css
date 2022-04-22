@@ -1,0 +1,220 @@
+/* Responsive 1400px */
+@media (max-width:1400px){
+    .side-bar {
+        right: 5vw;
+        left: 63vw;
+    }
+    .stories-bar {
+        margin-left: 3vw;
+        margin-right: 40vw;
+    }
+    .post-box {
+        margin-left: 3vw;
+        margin-right: 40vw;
+    }
+    .header {
+        gap: 125px;
+    }
+    .impressum-top {
+        flex-direction: column;
+    }
+    .responsability {
+        font-size: 1.3em;
+    }
+    .responsability-title {
+        font-size: 1.5em;
+    }
+    .responsability-subtitle{
+        font-size: 1.3em;
+    }
+    .datenschutz1 a{
+        word-wrap: break-word;
+    }
+    .datenschutz2 a{
+        word-wrap: break-word;
+    }
+}
+/* Responsive 1150px */
+@media (max-width:1150px){
+    .stories-bar {
+        margin-left: 1vw;
+        margin-right: 37vw
+    }
+    .post-box {
+        margin-left: 1vw;
+        margin-right: 37vw
+    }
+    .side-bar {
+        right: 1vw;
+    }
+    .header {
+        gap: 22px;
+    }
+    .datenschutz1 {
+        font-size: 1.3em;
+    }
+    .datenschutz2 {
+        font-size: 1.3em;
+    }
+}
+/* Responsive 1000px */
+@media (max-width:1000px){
+    .user-box, .contacts {
+        display: none;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .link-grey {
+        color: black;
+        font-weight: 600;
+    }
+    .post-container {
+        margin-bottom: 70px;
+    }
+    .stories-bar {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+    .post-box {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .stories-box {
+        min-width: 142px;
+    }
+    .stories-box h5 {
+        min-width: 142px;
+        text-align: center;
+        min-height: 40px;
+    }
+    .header-icon {
+        height: 25px;
+        width: 25px;
+    }
+    .search-box {
+        padding: 0;
+    }
+    .search-input {
+        padding: 0;
+    }
+    .logo-title{
+        font-size: 1.5em;
+    }
+    .imprssum h1 {
+        font-size: 2em !important;
+    }
+}
+/* Responsive 800px */
+@media (max-width:800px){
+    .stories-bar {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .post-box {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .search-box {
+        display: none;
+    }
+    .impressum {
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+    .datenschutz1 {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .datenschutz2 {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+/* Responsive 600px */
+@media (max-width:600px){
+    .header-icon {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .responsable {
+        font-size: 20px;
+    }
+    .impressum-box{
+        min-width: 300px;
+        min-height: 250px;
+    }
+    .datenschutz1 h2, .datenschutz2 h2 {
+        font-size: 1.2em;
+    }
+    .datenschutz-title {
+        font-size: 1.5em;
+        margin-top: 70px;
+    }
+    .datenschutz-top {
+        font-size: 20px;
+    }
+    .closure-x {
+        top: 1vh;
+    }
+}
+/* Responsive 500px */
+@media (max-width:500px){
+    .header {
+        flex-direction: column;
+        height: 130px;
+        justify-content: flex-start;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer p {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .main-content {
+        margin-bottom: 200px;
+    }
+    .post-image {
+        height: 600px;
+    }
+    h1{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .main-content {
+        margin-top: 155px;
+    }
+    .responsability-title {
+        font-size: 1.2em;
+    }
+    .responsability-subtitle {
+        font-size: 1em;
+    }
+    .datenschutz1 h2, .datenschutz2 h2 {
+        font-size: 1em;
+    }
+    .datenschutz1 h3, .datenschutz2 h3 {
+        font-size: 0.9em;
+    }
+}
+/* Responsive 400px */
+@media (max-width:400px){
+    .datenschutz1 {
+        font-size: 1.1em;
+    }
+    .datenschutz2 {
+        font-size: 1.1em;
+    }
+    .datenschutz-list {
+        padding-left: 5px;
+    }
+}

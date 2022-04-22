@@ -1,0 +1,8 @@
+# Kommentar
+
+User-agent: *
+
+disallow: /agb.html
+disallow: /impressum.html
+disallow: /datenschutz.html
+disallow: /widerruf.html
